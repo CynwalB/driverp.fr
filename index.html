@@ -1,0 +1,138 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <meta name="description" content="DriveRP - Le serveur GTA 5 Roleplay, sur FiveM, conçu par et pour les joueurs ! Candidatez pour passer votre whitelist et rejoindre l'aventure" />
+
+    <title>DriveRP | Serveur FiveM</title>
+    <link rel="shortcut icon" href="image/Logo.png" type="image/x-icon">
+    <link rel="icon" href="image/favicon.png" type="image/x-icon">
+
+    <link rel="preload" href="image/fondflou.png"/>
+    <link rel="preload" href="image/Logo.png"/>
+    <link rel="preload" href="image/bloc.png"/>
+
+    <link rel="canonical" href="https://driverp.fr/accueil" />
+
+    <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/accueil.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+   
+    <script type="text/javascript">
+   
+        $(document).ready(function(){
+            $('#barre').animate({
+                marginTop: "0",
+            }, 500);
+            $("#fermer").mousedown(function(){    
+                if (screen.width <= 656) {
+                    $('#barre').animate({ 
+                        marginTop: "-95px",
+                    }, 500);
+                } else {
+                    $('#barre').animate({ 
+                        marginTop: "-74px",
+                    }, 500);
+                }
+            });
+       });
+    </script>
+</head>
+
+<body>
+
+    <div id="barre">
+        Ouverture de Drive<font color="#ea0171">RP</font> [Bêta] en Free Access le 1er mars prochain !
+        <div id="fermer"></div>
+    </div>
+
+    <header>
+        <nav class="banner">  
+
+            <a href="https://driverp.fr/" class="logo" title="Page d'accueil"><img src="image/Logo.png"></a>
+
+            <div class="menu">
+                <ul>
+                    <li><a class="wiki" href="wiki/" title="Accédez aux réglements du serveur">WIKI</a></li>
+                    <li><a class="jeu" href="panel/login.php" title="Accèdez au panel de jeu in-game">PANEL JEU</a></li>
+                    <li><a class="staff" href="whitelist/connexion/" title="Accès réservé au membre du staff">PANEL STAFF</a></li>
+                </ul>
+            </div>
+
+            <a href="https://driverp.fr/" class="logo2" title="Page d'accueil"><img src="image/Logo.png"></a>
+                
+            <div class="menu-hamburger" onclick="lockScroll()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>       
+        </nav>
+    </header>
+    
+    <div class="image-fond">
+        <div class="container">
+            <div class="slogan">
+                <h2>VIVEZ UNE EXPÉRIENCE DES PLUS RÉALISTES SUR DIRVE<font color="#ea0171">RP</font> !</h2>
+                <h4>Le serveur conçu par et pour les joueurs.</h4>
+            </div>
+            <div class="boutons">
+                <button onclick="window.location.href='https://discord.gg/KxvwKyUMtg';" title="Discord"><img src="image/reseaux/discord_blanc2.png"> DISCORD</button>
+                <button onclick="window.location.href='whitelist/whitelist';" title="Formulaire"><img src="image/reseaux/formulaire_blanc.png"> FORMULAIRE</button>
+            </div>
+        </div>
+    </div>
+    <div class="contenu">
+
+        </div>
+    </div>
+
+    <!-- <footer>
+        <nav class="bas">
+
+            <div class="reseaux_hover">
+                <ul>
+                    <li><a href="https://www.instagram.com/shyrph/" target="_blank" title="Rejoignez-nous sur Instagram"><img src="image/reseaux/instagram.png"></a></li>
+                    <li><a href="https://twitter.com/Shyrph" target="_blank" title="Rejoignez-nous sur Twitter"><img src="image/reseaux/twitter.png"></a></li>
+                    <li><a href="https://discord.gg/3WJ9Bzt6aK" target="_blank" title="Rejoignez-nous sur Discord"><img src="image/reseaux/discord.png"></a></li>
+                    <li><a href="https://www.youtube.com/@shyrph746" target="_blank" title="Rejoignez-nous sur Youtube"><img src="image/reseaux/youtube.png"></a></li>
+                </ul>
+            </div>
+
+            <div class="reseaux">
+                <ul>
+                    <li><a href="https://www.instagram.com/shyrph/" target="_blank" title="Rejoignez-nous sur Instagram"><img class="insta" src="image/reseaux/instagram_blanc.png"></a></li>
+                    <li><a href="https://twitter.com/Shyrph" target="_blank" title="Rejoignez-nous sur Twitter"><img class="tw" src="image/reseaux/twitter_blanc.png"></a></li>
+                    <li><a href="https://discord.gg/3WJ9Bzt6aK" target="_blank" title="Rejoignez-nous sur Discord"><img class="disc" src="image/reseaux/discord_blanc.png"></a></li>
+                    <li><a href="https://www.youtube.com/@shyrph746" target="_blank" title="Rejoignez-nous sur Youtube"><img class="yt" src="image/reseaux/youtube_blanc.png"></a></li>
+                </ul>
+            </div>
+
+            <p class="copyright">© 2024 - Tous droits réservés - Designed by Univer's</p>
+        </nav>
+    </footer> -->
+
+</body>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger");
+        const navLinks = document.querySelector(".menu");
+ 
+        menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu');
+        });
+
+        function lockScroll() {
+            document.body.classList.toggle('lock-scroll');
+        };
+
+        $(document).ready(function(){
+            $('.menu-hamburger').click(function(){
+		        $(this).toggleClass('open');
+	        });
+        });
+    </script>
+
+</html>

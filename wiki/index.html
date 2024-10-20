@@ -1,0 +1,139 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+
+    <title>DriveRP | Serveur FiveM</title>
+    <link rel="shortcut icon" href="../image/Logo.png" type="image/x-icon">
+    <link rel="icon" href="../image/Logo.png" type="image/x-icon">
+
+    <link rel="preload" href="image/fondwiki.png"/>
+    <link rel="preload" href="image/Logo.png"/>
+    <link rel="preload" href="image/bloc.png"/>
+
+    <link rel="canonical" href="https://driverp.fr/wiki"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Athiti&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="banner">  
+
+            <a href="https://driverp.fr/" class="logo" title="Page d'accueil"><img src="../image/Logo.png"></a>
+
+            <div class="menu">
+                <ul>
+                    <li><a class="wiki" href="" title="Accédez aux réglements du serveur">WIKI</a></li>
+                    <li><a class="jeu" href="../panel/login.php" title="Accèdez au panel de jeu in-game">PANEL JEU</a></li>
+                    <li><a class="staff" href="../whitelist/connexion/" title="Accès réservé au membre du staff">PANEL STAFF</a></li>
+                </ul>
+            </div>
+
+            <a href="https://driverp.fr/" class="logo2" title="Page d'accueil"><img src="../image/Logo.png"></a>
+                
+            <div class="menu-hamburger" onclick="lockScroll()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>       
+        </nav>
+    </header>
+    
+    <div class="image-fond">
+        <div class="titre">
+            <h2>WIKI</h2>
+            <div class="menu2">
+                <ul>
+                    <li><a class="accueil" href="https://driverp.fr/" title="Page d'accueil">ACCUEIL</a></li>
+                    <li><a class="wiki" href="" title="Accédez aux réglements du serveur">WIKI</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="contenu">
+        <h2>GÉNÉRAL</h2>
+        <div class="box">
+            <div class="bloc1">
+                <a class="link-image1" href="reglement/">
+                    <div class="image"></div>
+                </a>
+                <h2>
+                    <a class="link-h1" href="reglement/">Règlement</a>
+                </h2>
+                <p>Voici le règlement général du serveur DriveRP !</p>
+            </div>
+            <div class="bloc2">
+                <a class="link-image2" href="notion/">
+                    <div class="image"></div>
+                </a>
+                <h2>
+                    <a class="link-h2" href="notion/">Notions RP</a>
+                </h2>
+                <p>Voici les notions du Roleplay !</p>
+            </div>
+            <div class="bloc3">
+                <a class="link-image3" href="pack/">
+                    <div class="image"></div>
+                </a>
+                <h2>
+                    <a class="link-h3" href="pack/">Pack Graphique</a>
+                </h2>
+                <p>Voici le règlement sur les packs graphiques !</p>    
+            </div>
+        </div>
+    </div>
+
+    <!-- <footer>
+        <nav class="bas">
+ 
+            <div class="reseaux_hover">
+                <ul>
+                    <li><a href="https://www.instagram.com/shyrph/" target="_blank" title="Rejoignez-nous sur Instagram"><img src="image/reseaux/instagram.png"></a></li>
+                    <li><a href="https://twitter.com/Shyrph" target="_blank" title="Rejoignez-nous sur Twitter"><img src="image/reseaux/twitter.png"></a></li>
+                    <li><a href="https://discord.gg/3WJ9Bzt6aK" target="_blank" title="Rejoignez-nous sur Discord"><img src="image/reseaux/discord.png"></a></li>
+                    <li><a href="https://www.youtube.com/@shyrph746" target="_blank" title="Rejoignez-nous sur Youtube"><img src="image/reseaux/youtube.png"></a></li>
+                </ul>
+            </div>
+
+            <div class="reseaux">
+                <ul>
+                    <li><a href="https://www.instagram.com/shyrph/" target="_blank" title="Rejoignez-nous sur Instagram"><img class="insta" src="image/reseaux/instagram_blanc.png"></a></li>
+                    <li><a href="https://twitter.com/Shyrph" target="_blank" title="Rejoignez-nous sur Twitter"><img class="tw" src="image/reseaux/twitter_blanc.png"></a></li>
+                    <li><a href="https://discord.gg/3WJ9Bzt6aK" target="_blank" title="Rejoignez-nous sur Discord"><img class="disc" src="image/reseaux/discord_blanc.png"></a></li>
+                    <li><a href="https://www.youtube.com/@shyrph746" target="_blank" title="Rejoignez-nous sur Youtube"><img class="yt" src="image/reseaux/youtube_blanc.png"></a></li>
+                </ul>
+            </div>
+
+            <p class="copyright">© 2024 - Tous droits réservés - Designed by Univer's</p>
+        </nav>
+    </footer> -->
+
+</body>
+
+    <script>
+        const menuHamburger = document.querySelector(".menu-hamburger");
+        const navLinks = document.querySelector(".menu");
+ 
+        menuHamburger.addEventListener('click',()=>{
+            navLinks.classList.toggle('mobile-menu');
+        });
+
+        function lockScroll() {
+            document.body.classList.toggle('lock-scroll');
+        };
+
+        $(document).ready(function(){
+            $('.menu-hamburger').click(function(){
+		        $(this).toggleClass('open');
+	        });
+        });
+    </script>
+
+</html>

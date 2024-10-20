@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /panel/
+Disallow: /whitelist/
+Allow: /wiki/
+Allow: /wiki/notion
+Allow: /wiki/reglement
+Allow: /wiki/pack
+Allow: /
