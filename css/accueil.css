@@ -1,0 +1,1098 @@
+    *, ::before, ::after {
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: auto;
+		overflow-x: hidden;
+        scroll-behavior: smooth;
+        background-color: #060723;
+	}
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+ 
+    ::-webkit-scrollbar-thumb {
+        background-color: grey; 
+        border-radius: 15px;
+        border-bottom: 2px inset black;
+        opacity: 0.8;
+    }
+
+    ::-webkit-scrollbar-track {
+        opacity: 0;
+    }
+
+    ::selection {
+        background: #ea0171;
+    }
+         
+    #barre a {
+        list-style: none;
+        text-decoration: none;
+        color: #ea0171;
+    }
+
+    #barre a:hover {
+        transition: all 1s ease-out;
+        text-decoration: underline;
+    }
+     
+    #barre {
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        background:#0a0c3f;
+        color: white;
+        padding: 23px 0;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        font-size: 16px;
+        margin-top: -50px;
+        border-bottom: 4px solid #ea0171;
+    }
+     
+    #fermer {
+        z-index: 2;
+        background: url(../image/fermer.png);
+        width: 18px;
+        height:18px;
+        display: block;
+        cursor: pointer;
+        float:right;
+        margin-right:30px;
+    }
+
+    .lock-scroll {
+        overflow-y: hidden;
+    }
+
+    header {
+        position: sticky;
+        height: 100px;
+        width: 100vw;
+        z-index: 1;
+    }
+
+    .banner {
+        position: absolute;
+        padding: 50px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        top: 0px;
+        height: 110px;
+        box-sizing: border-box;
+        align-items: center;
+        background-color: #060723;
+    }
+
+    .banner a {
+        position: relative;
+        color: rgb(233, 233, 233);
+        font-family: Lucida Sans, Arial;
+        font-weight: bold;
+        font-size: 16px;
+        list-style: none;
+        text-decoration: none;
+        box-shadow: none;
+        top: 5px;
+    }
+
+    .banner .logo {
+        position: relative;
+        display: flex;
+        width: 110px;
+        height: 110px;
+        margin: 0 80px;
+        top: -5px;
+    }
+
+    .banner .logo2 {
+        display: none;
+    }
+
+    .banner .menu ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner .menu ul li {
+        margin: 0 20px;
+    }
+
+    .banner .menu ul li .wiki {
+        display: flex;
+        width: 40px;
+        top: 7.5px;
+        height: auto;
+        border-bottom: 3px solid #060723;
+    }
+
+    .banner .menu ul li .wiki:hover:nth-of-type(1) {
+        transition: all 1s ease-out;
+        text-decoration: none;
+        border-bottom: 3px solid #ea0171;
+        color: #ea0171;
+    }
+
+    .banner .menu ul li .staff {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2.5px solid #ea0171;
+        background-color: #ea0171;
+        width: 140px;
+        height: 45px;
+    }
+
+    .banner .menu ul li .jeu {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 2.5px solid #060723;
+        width: 120px;
+        height: 45px;
+    }
+
+    .banner .menu ul li .jeu:hover {
+        transition: all 1s ease-out;
+        border: 2.5px solid #ea0171;
+    }
+
+    .banner .menu ul li .staff:hover {
+        transition: all 1s ease-out;
+        background-color: #0a0c3f;
+    }
+
+    .banner .menu-hamburger {
+        display: none;
+    }
+
+    /* ACCUEIL */
+
+    .image-fond {
+        position: absolute;
+        display: block;
+        width: 100%;
+        margin-top: -10px;
+        margin-left: auto;
+        margin-right: auto;
+        height: 100%;
+        background: url(../image/fondflou.png) center center no-repeat;
+        background-size: cover;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .container .slogan {
+        position: relative;
+        display: block;
+        width: 37.5%;
+        height: 100%;
+        margin-left: 12.5%;
+        margin-top: 250px;
+    }
+
+    .container .slogan h2 {
+        color: rgb(255, 255, 255);
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 60px;
+    }
+
+    .container .slogan h4 {
+        color: rgb(255, 255, 255);
+        text-align: left;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+    }
+
+    .container .boutons {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 50%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 350px;
+    }
+
+    .container .boutons button {
+        width: 175px;
+        height: 60px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        color: white;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        border: 3px solid #ea0171;
+        background-color: #0a0c3f;
+    }
+
+    .container .boutons button:hover {
+        transition: all 1s ease-out;
+        background: transparent;
+    }
+
+    .container .boutons button img {
+        width: 25px;
+        height: 23px;
+    }
+
+    .contenu {
+        position: static;
+        display: block;
+        margin: auto;
+        margin-top: 20%;
+        width: 70%;
+        height: 500px;
+        background-color: #060723;
+    }
+
+    /* FOOTER */
+
+    footer {
+        position: sticky;
+		height: 120px;
+		width: 100vw;
+		background: #14188b;
+        left: 0px;
+        margin-top: 100px;
+    }
+
+    .bas {
+        position: absolute;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        box-sizing: border-box;
+        align-items: center;
+        bottom: 0px;
+        left: 0px;
+    }
+
+    .bas a {
+        position: relative;
+        left: 310px;
+        bottom: 50px;
+    }
+
+    .bas img {
+        height: 25px;
+        width: 25px;
+    }
+
+    .bas .reseaux ul {
+        display: flex;
+    }
+
+    .bas .reseaux ul li {
+        margin: 0 8px;
+    }
+
+    .reseaux {
+        position: relative; 
+    }
+
+    .bas .reseaux_hover ul {
+        display: flex;
+    }
+
+    .bas .reseaux_hover ul li {
+        margin: 0 8px;
+    }
+
+    .reseaux_hover {
+        position: absolute;
+    }
+
+    .bas .copyright {
+        position: relative;
+        color: white;
+        margin: auto;
+        font-family: Arial, Helvetica, sans-serif, Helvetica, sans-serif;
+        font-size: 15px;
+        /* right: 300px; */
+        bottom: 50px;
+
+    }
+
+    .bas .reseaux ul li a .insta:hover {
+        transition: 1s;
+        filter: opacity(0);
+    }
+
+    .bas .reseaux ul li a .tw:hover {
+        transition: 1s;
+        filter: opacity(0);
+    }
+
+    .bas .reseaux ul li a .disc:hover {
+        transition: 1s;
+        filter: opacity(0);
+    }
+
+    .bas .reseaux ul li a .yt:hover {
+        transition: 1s;
+        filter: opacity(0);
+    }
+
+@media screen and (max-width: 1350px) {
+
+}
+
+@media screen and (max-width: 1200px) {
+
+    /* ACCUEIL */
+
+    .container .boutons {
+        margin-top: 450px;
+    }
+
+    /* FOOTER */
+
+    .bas a {
+        left: 150px;
+        bottom: 40px;
+    }
+
+    .bas .copyright {
+        right: 140px;
+        bottom: 40px;
+
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .banner .logo {
+        margin: 0 50px;
+    }
+
+    #barre {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    #barre {
+        font-size: 13px;
+    }
+
+    .banner {
+        padding: 0;
+    }
+
+    .banner a {
+        font-size: 11px;
+    }
+
+    .menu.mobile-menu {
+        background: #060723;
+        border-radius: 15px;
+        margin-top: 0;
+        overflow-y: hidden;
+        z-index: -1;
+    }
+
+    .banner .logo {
+        display: none;
+    }
+
+    .banner .logo2 {
+        display: flex;
+        position: relative;
+        width: 110px;
+        height: 110px;
+        top: -5px;
+        left: 60px;
+    }
+
+    .menu {
+        position: absolute;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        background-color: #060723;
+        width: 100%;
+        height: 150px;
+        top: 75px;
+        left: 0;
+        margin-top: -20%;
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 0px;
+    }
+
+    .banner .menu ul li {
+        margin-left: 80px;
+        margin-top: 15px;
+    }
+
+    .banner .menu ul li .wiki {
+        border: none;
+        width: auto;
+        height: auto;
+        background-color: #060723;
+        border-bottom: 2px solid #060723;
+    }
+
+    .banner .menu ul li .jeu {
+        border: none;
+        width: auto;
+        height: auto;
+        background-color: #060723;
+        border-bottom: 2px solid #060723;
+    }
+
+    .banner .menu ul li .staff {
+        border: none;
+        width: auto;
+        height: auto;
+        background-color: #060723;
+        border-bottom: 2px solid #060723;
+    }
+
+    .banner .menu ul li a:hover:nth-of-type(1) {
+        transition: all 1s ease;
+        border: none;
+        text-decoration: none;
+        border-bottom: 2px solid #ea0171;
+        color: #ea0171;
+        background-color: #060723;
+    }
+
+    .banner .menu-hamburger {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        position: relative;
+        margin-right: 60px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+      
+    .banner .menu-hamburger span {
+        display: block;
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        background: white;
+        border-radius: 9px;
+        opacity: 1;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    .banner .menu-hamburger span:nth-child(1) {
+        top: 0px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    .banner .menu-hamburger span:nth-child(2) {
+        top: 18px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    .banner .menu-hamburger span:nth-child(3) {
+        top: 36px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    .banner .menu-hamburger.open span:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 3px;
+        left: 9px;
+    }
+
+    .banner .menu-hamburger.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+    }
+
+    .banner .menu-hamburger.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 39px;
+        left: 8px;
+    }
+
+    /* ACCUEIL */
+
+    .container .slogan {
+        margin-left: 7.5%;
+    }
+
+    .container .slogan h2 {
+        font-size: 50px;
+    }
+
+    .container .slogan h4 {
+        font-size: 20px;
+    }
+
+    .container .boutons {
+        margin-top: 400px;
+    }
+
+    .container .boutons button {
+        margin-right: 7.5%;
+    }
+}
+
+@media screen and (max-width: 735px) {
+   
+    #barre {
+        font-size: 10px;
+    }
+
+    .container .slogan {
+        margin-top: 250px;
+    }
+
+    .container .slogan h2 {
+        font-size: 40px;
+    }
+
+    .container .slogan h4 {
+        font-size: 15px;
+    }
+
+    .container .boutons {
+        margin-top: 325px;
+    }
+ 
+}
+
+@media screen and (max-width: 850px) {
+    
+    #barre {
+        font-size: 12px;
+    }
+
+    #fermer {
+        background-size: 14px;
+        background-repeat: no-repeat;
+    }
+}
+
+@media screen and (max-width: 705px) {
+
+    .banner {
+        padding: 0;
+    }
+
+    .banner a {
+        font-size: 11px;
+    }
+
+    .menu.mobile-menu {
+        background: #060723;
+        border-radius: 15px;
+        margin-top: 0;
+        overflow-y: hidden;
+        z-index: -1;
+    }
+
+    .banner .logo {
+        display: none;
+    }
+
+    .banner .logo2 {
+        display: flex;
+        position: relative;
+        width: 110px;
+        height: 110px;
+        top: -5px;
+        left: 60px;
+    }
+
+    .menu {
+        position: absolute;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        background-color: #060723;
+        width: 100%;
+        height: 150px;
+        top: 75px;
+        left: 0;
+        margin-top: -20%;
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 0px;
+    }
+
+    .banner .menu ul li {
+        margin-left: 80px;
+        margin-top: 15px;
+    }
+
+    .banner .menu ul li .wiki {
+        border: none;
+        width: auto;
+        height: auto;
+        background-color: #060723;
+        border-bottom: 2px solid #060723;
+    }
+
+    .banner .menu ul li .jeu {
+        border: none;
+        width: auto;
+        height: auto;
+        background-color: #060723;
+        border-bottom: 2px solid #060723;
+    }
+
+    .banner .menu ul li .staff {
+        border: none;
+        width: auto;
+        height: auto;
+        background-color: #060723;
+        border-bottom: 2px solid #060723;
+    }
+
+    .banner .menu ul li a:hover:nth-of-type(1) {
+        transition: all 1s ease;
+        border: none;
+        text-decoration: none;
+        border-bottom: 2px solid #ea0171;
+        color: #ea0171;
+        background-color: #060723;
+    }
+
+    .banner .menu-hamburger {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        position: relative;
+        margin-right: 60px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+      
+    .banner .menu-hamburger span {
+        display: block;
+        position: absolute;
+        height: 6px;
+        width: 100%;
+        background: white;
+        border-radius: 9px;
+        opacity: 1;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    .banner .menu-hamburger span:nth-child(1) {
+        top: 0px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    .banner .menu-hamburger span:nth-child(2) {
+        top: 18px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    .banner .menu-hamburger span:nth-child(3) {
+        top: 36px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    .banner .menu-hamburger.open span:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 3px;
+        left: 9px;
+    }
+
+    .banner .menu-hamburger.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+    }
+
+    .banner .menu-hamburger.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 39px;
+        left: 8px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    header {
+        height: 100px;
+    }
+
+    .header2 {
+		height: 155px;
+    }
+
+    .banner {
+        padding: 0;
+    }
+
+    .banner a {
+        font-size: 11px;
+    }
+
+    .menu.mobile-menu {
+        background: #060723;
+        border-radius: 15px;
+        margin-top: 0;
+        overflow-y: hidden;
+        z-index: -1;
+    }
+
+    .banner .logo {
+        display: none;
+    }
+
+    .banner .logo2 {
+        display: flex;
+        position: relative;
+        width: 90px;
+        height: 90px;
+        margin-top: 10px;
+        left: 40px;
+    }
+
+    .menu {
+        position: absolute;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        background-color: #060723;
+        width: 100%;
+        height: 150px;
+        top: 75px;
+        left: 0;
+        margin-top: -30%;
+        transition: all 0.5s ease;
+        z-index: -1;
+    }
+
+    .menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 0px;
+    }
+
+    .banner .menu ul li {
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+
+    .banner .menu ul li .wiki {
+        border: none;
+        width: auto;
+        height: auto;
+        border-bottom: 2px solid #060723;
+    }
+
+    .banner .menu ul li .jeu {
+        border: none;
+        width: auto;
+        height: auto;
+        border-bottom: 2px solid #060723;
+    }
+
+    .banner .menu ul li .staff {
+        border: none;
+        width: auto;
+        height: auto;
+        border-bottom: 2px solid #060723;
+    }
+
+    .banner .menu ul li a:hover:nth-of-type(1) {
+        transition: all 1s ease;
+        border: none;
+        text-decoration: none;
+        border-bottom: 2px solid #ea0171;
+        color: #ea0171;
+    }
+
+    .banner .menu-hamburger {
+        width: 50px;
+        height: 40px;
+        margin-top: 5px;
+        display: flex;
+        position: relative;
+        margin-right: 40px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+      
+    .banner .menu-hamburger span {
+        display: block;
+        position: absolute;
+        height: 5px;
+        width: 100%;
+        background: white;
+        border-radius: 9px;
+        opacity: 1;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    .banner .menu-hamburger span:nth-child(1) {
+        top: 0px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    .banner .menu-hamburger span:nth-child(2) {
+        top: 18px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    .banner .menu-hamburger span:nth-child(3) {
+        top: 36px;
+        -webkit-transform-origin: left center;
+        -moz-transform-origin: left center;
+        -o-transform-origin: left center;
+        transform-origin: left center;
+    }
+
+    .banner .menu-hamburger.open span:nth-child(1) {
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+        top: 4px;
+        left: 9px;
+    }
+
+    .banner .menu-hamburger.open span:nth-child(2) {
+        width: 0%;
+        opacity: 0;
+    }
+
+    .banner .menu-hamburger.open span:nth-child(3) {
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        top: 39px;
+        left: 8px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .slogan {
+        margin-top: 100px;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container .slogan h2 {
+        font-size: 40px;
+    }
+
+    .container .slogan h4 {
+        font-size: 15px;
+    }
+
+    .container .boutons {
+        flex-direction: row;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 75px;
+    }
+
+    .container .boutons button {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .slogan {
+        margin-top: 100px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container .slogan h2 {
+        font-size: 35px;
+    }
+
+    .container .slogan h4 {
+        font-size: 15px;
+    }
+
+    .container .boutons {
+        flex-direction: row;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 75px;
+    }
+
+    .container .boutons button {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .container {
+        flex-direction: column;
+    }
+
+    .container .slogan {
+        margin-top: 100px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .container .slogan h2 {
+        font-size: 35px;
+    }
+
+    .container .slogan h4 {
+        font-size: 15px;
+    }
+
+    .container .boutons {
+        flex-direction: row;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 75px;
+    }
+
+    .container .boutons button {
+        width: 125px;
+        height: 45px;
+        font-size: 12px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+    }
+
+    .container .boutons button img {
+        width: 15px;
+        height: 13px;
+    }
+}
+
